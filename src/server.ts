@@ -1,6 +1,6 @@
+import { randomUUID } from "crypto";
 import "../src/config/env";
 import express from "express";
-import { v4 as uuidv4 } from "uuid";
 import { ingestCompanySchema } from "./api/ingest";
 import { startCompanyCrawlJob } from "./jobs/companyCrawl.job";
 
@@ -26,7 +26,7 @@ app.post("/ingest/company", async (req, res) => {
     }
 
     const { company_name, primary_url, competitors } = parsed.data;
-    const jobId = uuidv4();
+    const jobId = randomUUID();
 
     // Primary
     startCompanyCrawlJob({
