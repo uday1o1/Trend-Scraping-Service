@@ -1,0 +1,37 @@
+{
+  "name": "trend-scraping-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uday1o1/Trend-Scraping-Service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/uday1o1/Trend-Scraping-Service/issues"
+  },
+  "homepage": "https://github.com/uday1o1/Trend-Scraping-Service#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.93.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "firecrawl": "^4.12.0",
+    "mongodb": "^7.0.0",
+    "reductoai": "^0.13.0",
+    "uuid": "^13.0.0",
+    "voyageai": "^0.1.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
